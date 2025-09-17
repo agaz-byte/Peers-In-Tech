@@ -1,0 +1,9 @@
+[
+  {"brand": "Apple", "model": "iPhone 14", "price": "$999"},
+  {"brand": "Apple", "model": "iPhone 13", "price": "$799"},
+  {"brand": "Samsung", "model": "Galaxy S23", "price": "$899"},
+  {"brand": "Samsung", "model": "Galaxy A54", "price": "$499"},
+  {"brand": "Tecno", "model": "Spark 10", "price": "$180"},
+  {"brand": "Infinix", "model": "Note 30", "price": "$220"},
+  {"brand": "Xiaomi", "model": "Redmi Note 12", "price": "$250"}
+]

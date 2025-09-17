@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Search Results</h1>
+        {% if results %}
+            <div class="grid">
+                {% for phone in results %}
+                    <div class="card">
+                        <h2>{{ phone.brand }} {{ phone.model }}</h2>
+                        <p>💰 Price: <span class="price">{{ phone.price }}</span></p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="not-found">❌ No results found for "<b>{{ query }}</b>"</p>
+        {% endif %}
+        <a href="{{ url_for('home') }}" class="back-btn">🔙 Search Again</a>
+    </div>
+</body>
+</html>
